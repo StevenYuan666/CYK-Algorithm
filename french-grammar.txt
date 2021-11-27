@@ -1,0 +1,59 @@
+S -> PR-1s VP-1s NP | PR-2s VP-2s NP | PR-3s VP-3s NP | NP-s VP-3s NP | PR-1p VP-1p NP | PR-2p VP-2p NP | PR-3p VP-3p NP | NP-p VP-3p NP
+S -> PR-1s NEG VP-1s NEG NP | PR-2s NEG VP-2s NEG NP | PR-3s NEG VP-3s NEG NP | NP-s NEG VP-3s NEG NP
+S -> PR-1p NEG VP-1p NEG NP | PR-2p NEG VP-2p NEG NP | PR-3p NEG VP-3p NEG NP | NP-p NEG VP-3p NEG NP
+S -> PR-1s DT VP-t-1s | PR-2s DT VP-t-2s | PR-3s DT VP-t-3s | NP-s DT VP-t-3s
+S -> PR-1p DT VP-t-1p | PR-2p DT VP-t-2p | PR-3p DT VP-t-3p | NP-p DT VP-t-3p
+S -> NP
+
+VP-t-1s -> 'regarde'
+VP-t-2s -> 'regardes'
+VP-t-3s -> 'regarde'
+VP-t-1p -> 'regardons'
+VP-t-2p -> 'regardez'
+VP-t-3p -> 'regardent'
+
+NEG -> 'ne' | 'pas'
+
+PR-1s -> 'je'
+PR-2s -> 'tu'
+PR-3s -> 'il' | 'elle'
+PR-1p -> 'nous'
+PR-2p -> 'vous'
+PR-3p -> 'ils' | 'elles'
+
+VP-1s -> 'mange' | 'regarde'
+VP-2s -> 'manges' | 'regardes'
+VP-3s -> 'mange' | 'regarde'
+VP-1p -> 'mangons' | 'regardons'
+VP-2p -> 'mangez' | 'regardez'
+VP-3p -> 'mangent' | 'regardent'
+
+NP -> NP-ms | NP-fs | NP-mp | NP-fp | PNA
+NP-s -> NP-ms | NP-fs
+NP-p -> NP-mp | NP-fp
+NP-ms -> DT-ms N-ms | DT-ms A-ms-pre N-ms | DT-ms N-ms A-ms-post
+NP-fs -> DT-fs N-fs | DT-fs A-fs-pre N-fs | DT-fs N-fs A-fs-post
+NP-mp -> DT-p N-mp | DT-p A-mp-pre N-mp | DT-p N-mp A-mp-post
+NP-fp -> DT-p N-fp | DT-p A-fp-pre N-fp | DT-p N-fp A-fp-post
+PNA -> PN | DT PN
+
+DT -> DT-ms | DT-fs | DT-p
+DT-ms -> 'le'
+DT-fs -> 'la'
+DT-p -> 'les'
+
+N-ms -> 'chat' | 'poisson'
+N-mp -> 'chats' | 'poissons'
+N-fs -> 'télévision' | 'semaine'
+N-fp -> 'télévisions' | 'semaines'
+PN -> 'Montréal' | 'Jonathan' | 'Canada'
+
+A-ms-pre -> 'beau' | 'joli' | 'dernier'
+A-fs-pre -> 'belle' | 'jolie' | 'dernière'
+A-mp-pre -> 'beaux' | 'jolis' | 'derniers'
+A-fp-pre -> 'belles' | 'jolies' | 'dernieres'
+
+A-ms-post -> 'noir' | 'heureux' | 'dernier'
+A-fs-post -> 'noire' | 'heureuse' | 'dernière'
+A-mp-post -> 'noirs' | 'heureux' | 'derniers'
+A-fp-post -> 'noires' | 'heureuses' | 'dernieres'
